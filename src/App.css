@@ -24,15 +24,90 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.homeScreen{
+  margin: 0;
+  overflow-y: hidden;
+  margin: 6rem auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header{
+  margin-right: auto ;
+  background-color: #333333;
+
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  margin: 0;
+  text-align: center;
+  padding: 12px 15px 12px 15px;
+  color: white !important;
+  display: block;
+  text-decoration: none;
+  background-color: #333333;
+}
+
+.mainMenu>li{
+  display: inline-block;
+  margin-left: 10rem;
+  margin-right: 10px;
+  justify-content: space-between;
+  background-color: #333333;
+  
+  
+  
+  
+}
+
+li:hover>a{
+  background-color: #333333;
+  color: white;
+  cursor: pointer;
+}
+.subMenu{
+  position: absolute;
+
+  display: none;
+  
+}
+.subMenu li{
+  border-top: 1px solid #575F6A;
+  border-bottom: 1px solid #6B727C;
+  position: relative;
+}
+.mainMenu>li:hover .subMenu{
+  display: block;
+}
+.SuperSubMenu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  -ms-transform: translate(100%,0);
+  -webkit-transform: translate(100%,0);
+  transform:translate(100%,0);
+  display: none;
+}
+.subMenu li:hover>.SuperSubMenu{
+  display: block;
+}
+.navbar1{
+  width: auto;
+}
+
+.locationOnly{
+
+  margin-left: 10rem;
+  margin-right: 10px;
+  justify-content: space-around;
+  display: inline-block;
+  padding: 5px;
+  border: 2px 400 black;
+  border-style: outset;
+  
+  
 }

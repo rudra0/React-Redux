@@ -3,7 +3,12 @@ import { React } from "react";
 const Home = () =>{
 
     return(
-        <h1>Home Screen </h1>
+        <div className="homeScreen">
+            <h5>WELCOME TO </h5>
+            <h5>RENTAL MANAGEMENT SYSTEM</h5>
+            <h5>Please Select Location</h5>
+        </div>
+        
     )
 }
 

@@ -1,21 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './Components/Header';
-import SignInScreen from './Components/SignIn';
-import Register from './Components/Register';
 import {BrowserRouter, Route, Link} from 'react-router-dom';
-import AddProduct from './Components/AddProduct';
-import ProductScreen from './Components/ProductScreen';
+import Home from './Components/Home';
+import Locations from './Components/Locations';
+import OnlyLocation from './Components/OnlyLocation';
+import Details from './Components/Details';
+
 
 function App() {
+  
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
-        <Route exact path= "/" component = {ProductScreen} />
-        <Route path = "/signin" component =  {SignInScreen} />
-        <Route path = "/register" component= {Register} />
-        <Route path = "/addproduct" component = { AddProduct } />
+        <Route exact path= "/" component = {Home} />
+        <Route path = "/location/:locationName/:branchName?" component = { Locations } />
+        <Route path = "/locations/:locationName" component = {OnlyLocation} />
+        <Route path = "/newLocation/detail/:locationName/:particularData" component = { Details} />
       </BrowserRouter>
       
     </div>
